@@ -1,0 +1,11 @@
+{% load static %}
+
+<p> QUERY PAGE</p>
+
+<form action="bot/nuance">
+    {% csrf_token %}
+    <input type="text" name="query" value="query">
+    <input type="submit" value="Submit">
+</form>
+
+<img src="{% static "bot/pic_mountain.jpg" %}" alt="Mountain View" style="width:304px;height:228px;">
