@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from bot.static.bot.py import yellowpages
 
 def query(request):
-    return render(request, 'bot/query.html')
+    return render(request, 'bot/query2.html')
 
 def result(request):
 

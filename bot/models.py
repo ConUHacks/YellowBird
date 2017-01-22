@@ -7,4 +7,4 @@ class Query(models.Model):
 
 class Result(models.Model):
     location_x = models.FloatField()
-    location_y = models.FloatField()
+    location_y = models.FloatField(git )
