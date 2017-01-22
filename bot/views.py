@@ -1,6 +1,6 @@
 from django.template import Context
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from .models import Query
 
 import json
@@ -20,10 +20,16 @@ def result(request):
         chat = "food"
 
     # nuance api call when it works
-    # query_nuance_result = nuance.query_nuance(chat)
+    try:
+        query_nuance_result = nuance.query_nuance(chat)
+    except ValueError:
+        return Http404()
 
     # yellowpages api call
-    query_yellowpages_result = yellowpages.query_yp(chat)
+    try:
+        query_yellowpages_result = yellowpages.query_yp(chat)
+    except ValueError:
+        return Http404()
 
     coords_0 = [float(query_yellowpages_result[0]['centroid'].split(",")[0]), float(query_yellowpages_result[0]['centroid'].split(",")[1])]
     coords_1 = [float(query_yellowpages_result[1]['centroid'].split(",")[0]), float(query_yellowpages_result[1]['centroid'].split(",")[1])]

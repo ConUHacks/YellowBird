@@ -11,7 +11,7 @@ def query_nuance(query):
     nluEngine = 'NLE'
     companyName = keysN[0]
     appName = keysN[1]
-    cloudModelVersion = '1.0'
+    cloudModelVersion = '1.0.12'
     user = keysN[2]
     # connection data
     contentType = 'application/json'

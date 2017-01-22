@@ -4,10 +4,6 @@
 
 <input type="text" id="result" name="result" value="result">
 
-<p> {{results_head_0}} </p>
-<p> {{results_head_1}} </p>
-<p> {{results_head_2}} </p>
-<p> {{results_head_3}} </p>
 <img src="{% static "bot/pic_mountain.jpg" %}" alt="Mountain View" style="width:304px;height:228px;">
  -->
 <head>
@@ -30,7 +26,11 @@
   </head>
   <body>
   <div class="container">
-  <h3 style="margin: 40px;"> The results we found for you are as follows: </h3>
+  <h3 style="margin: 40px;"> Hey, You have a lot of options, here are our top picks! </h3>
+      <p> {{results_head_0.name}} </p>
+      <p> {{results_head_1.name}} </p>
+      <p> {{results_head_2.name}} </p>
+      <p> {{results_head_3.name}} </p>
     <div id="map" style="height:80%;width:500px;margin:0 auto;"></div>
 </div>    <script>
 
