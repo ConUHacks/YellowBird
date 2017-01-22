@@ -2,10 +2,11 @@
 
 <p> QUERY PAGE</p>
 
-<form action="bot/nuance">
+<form action="result">
     {% csrf_token %}
-    <input type="text" name="query" value="query">
-    <input type="submit" value="Submit">
+    <input type="text" id="concept" name="concept" value="concept">
+    <input type="text" id="location" name="location" value="location">
+    <input type="submit" id="submit" value="Submit">
 </form>
 
 <img src="{% static "bot/pic_mountain.jpg" %}" alt="Mountain View" style="width:304px;height:228px;">
