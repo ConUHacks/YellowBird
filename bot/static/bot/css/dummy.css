@@ -1,9 +1,6 @@
 body {
-  color: #FFF;
-  font-family: "Arvo";
-  /*background-color: #FD940A;*/
-  /*background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);*/
 }
+
 .page {
   padding-top: 20vh;
   text-align: center;
@@ -36,7 +33,7 @@ body {
 
 .Bcontainer {
   text-align: center;
-  margin: 0 485px;
+  margin: 0 515px;
   width: 270px;
   padding-top: 20px;
 }
@@ -157,4 +154,10 @@ footer {
 .rightone {
   float: right;
   padding-right: 0;
+}
+
+.map {
+  height: 100px;
+  width: 100px;
+  align: center;
 }

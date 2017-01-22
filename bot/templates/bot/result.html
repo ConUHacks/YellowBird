@@ -1,6 +1,6 @@
 {% load static %}
 
-<p> RESULT PAGE</p>
+<!-- <p> RESULT PAGE</p>
 
 <input type="text" id="result" name="result" value="result">
 
@@ -9,7 +9,7 @@
 <p> {{results_head_2}} </p>
 <p> {{results_head_3}} </p>
 <img src="{% static "bot/pic_mountain.jpg" %}" alt="Mountain View" style="width:304px;height:228px;">
-
+ -->
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
@@ -29,8 +29,10 @@
     </style>
   </head>
   <body>
-    <div id="map"></div>
-    <script>
+  <div class="container">
+  <h3 style="margin: 40px;"> The results we found for you are as follows: </h3>
+    <div id="map" style="height:80%;width:500px;margin:0 auto;"></div>
+</div>    <script>
 
       // The following example creates complex markers to indicate beaches near
       // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
