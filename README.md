@@ -6,7 +6,7 @@ Having a look into the proposed challenges,  we found the one from _Yellow Pages
 ## What it does
 There are two parts of this project.
 
-###Tweeter bot
+###Twitter bot
 Takes a tweet mentioning our [bot](https://twitter.com/butterxxxx) with the hashtag '#askYP', and returns a couple of relevant results plus a link to [Yellow Pages](www.yellowpages.ca).
 
 ###Web app
