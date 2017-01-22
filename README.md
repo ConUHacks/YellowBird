@@ -1,5 +1,5 @@
-[Query](query.png)
-[Results](results.png)
+![Query](query.png)
+![Results](results.png)
 ## Inspiration
 Having a look into the proposed challenges,  we found the one from _Yellow Pages_  very catchy. However, we had already the idea of working with _Nuance_ and their text processing API, so we decided to combine both in this project.
 
