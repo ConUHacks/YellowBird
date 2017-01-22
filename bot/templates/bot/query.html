@@ -11,25 +11,44 @@
 <script src="../../static/bot/js/dummy.js"></script>
 <body>
 
-<h1><span id="message">Yellow</span>bird</h1>
+<!-- <h1><span id="message">Yellow</span>bird</h1> -->
 
 
 <div class="container">
-  
-  
+
+
+  <!-- <ul class="nav nav-pills">
+    <li><a target='_blank' href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.co.uk/%3Fgws_rd%3Dssl" class="colorfix"><button class="btn" role="button">Sign in</button></a></li>
+    <li>
+      <a target='_blank' title="Google apps" class="firstsbuttons" href="https://www.google.co.uk/intl/en/options/"><img class="quad" src="http://www.englewoodschools.net/cms/lib8/CO01900647/Centricity/Domain/1009/GoogleAppsIcon.png" height="22" width="22"></a>
+    </li>
+    <li><a target='_blank' class="firstsbuttons" href="https://www.google.co.uk/imghp?hl=en&tab=wi&ei=7sfqVtCHG6TgyQOjo7d4&ved=0EKouCBUoAQ">Images</a></li>
+    <li><a target='_blank' class="firstsbuttons" href="https://mail.google.com/mail/?tab=wm">Gmail</a></li>
+  </ul>
+ -->
+
   <form action="result" method="POST">
     {% csrf_token %}
 
-    <input type="text" id="chat" name="chat" value="chat">
-    <input type="submit" value="Submit">
+    <div class="page">
+      <img class="logo" src="../../static/bot/logo.PNG">
+      <div class="container-fluid">
+      <br><input type="text" id="chat" name="chat" placeholder="Enter query here..." ="" align="center"><br>
+      <div class="Bcontainer">
+        <div class="button left" type="submit" target="_blank">Yellowbird Search</div>
+        <!-- <li><a target='_blank' class="colorfix"><button class="btn" type="submit" role="button">Submit</button></a></li> -->
+      </div>
+    </div>
+    </div>
+    <!-- <input type="submit" value="Submit"> -->
 
   </form>
 
 
-    
 
-      
- 
+
+
+
 
 
 <!--
