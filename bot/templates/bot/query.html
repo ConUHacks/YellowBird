@@ -17,24 +17,17 @@
 <div class="container">
   
   
-  <form>
-<div class="row">
-  <span>
-    <input class="balloon" style="width:400px" id="state" type="text" placeholder="Concept"/><label for="state">Concept</label>
-  </span>
-  <span>
-    <input class="balloon" id="galaxy" type="text" placeholder="Location" /><label for="galaxy">Location</label>
-  </span>
-</div>
-    
+  <form action="result" method="POST">
+    {% csrf_token %}
+
+    <input type="text" id="chat" name="chat" value="chat">
+    <input type="submit" value="Submit">
+
   </form>
 
-  <section class="buttons">
-  <div class="container">
-    <a class="btn btn-5">Hover</a> 
-    <!--End of Button 5 -->
+
     
-</section>
+
       
  
 
