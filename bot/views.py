@@ -7,6 +7,11 @@ import json
 from .static.bot.py import nuance
 from .static.bot.py import yellowpages
 
+def index(request):
+    return render(request, 'bot/index.html')
+
+def bootstrap(request):
+    return render(request, 'bot/bootstrap.min.css')
 
 def query(request):
     return render(request, 'bot/query.html')
@@ -19,11 +24,11 @@ def result(request):
         print("Error: nuance query returned invalid value")
         chat = "food"
 
-    # nuance api call when it works
-    try:
-        query_nuance_result = nuance.query_nuance(chat)
-    except ValueError:
-        return Http404()
+    # # nuance api call when it works
+    # try:
+    #     query_nuance_result = nuance.query_nuance(chat)
+    # except ValueError:
+    #     return Http404()
 
     # yellowpages api call
     try:
